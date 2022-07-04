@@ -40,7 +40,9 @@ function App() {
         />
       </div>
       <div className="cryptoDisplay">
-        <Legend />
+        <Routes>
+          <Route path="/" element={<Legend />}/>
+        </Routes>
         {filteredCoins.map((coin) => {
           return (
             <Routes>
