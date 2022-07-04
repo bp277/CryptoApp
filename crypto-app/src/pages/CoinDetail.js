@@ -3,8 +3,9 @@ import { useParams } from "react-router-dom";
 import Axios from "axios";
 import DOMPurify from 'dompurify'
 import './CoinDetail.css'
+import Coin from "../components/Coin";
 
-const CoinDetail = () => {
+const CoinDetail = (rank) => {
   const [coin, setCoin] = useState({});
   const params = useParams()
 

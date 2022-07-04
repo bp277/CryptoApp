@@ -63,12 +63,12 @@ function App() {
             </Routes>
           );
         })}
-        <Routes>
-          <Route path="/coin" element={<CoinDetail />}>
-            <Route path=":coinId" element={<CoinDetail />} />
-          </Route>
-        </Routes>
       </div>
+      <Routes>
+        <Route path="/coin" element={<CoinDetail />}>
+          <Route path=":coinId" element={<CoinDetail />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

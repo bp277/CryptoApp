@@ -1,7 +1,7 @@
 .coin-container .content {
     max-width: 740px;
-    margin: 1rem auto;
-    padding: .7rem 1rem;
+    margin: 16px auto;
+    padding: 11.2px 16px;
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
@@ -18,7 +18,7 @@
     box-shadow: 0px 0px 8px #A559FF;
     background-color: #A559FF;
     border-radius: 8px;
-    padding: .35rem;
+    padding: 5.6px;
 }
 
 .info {
@@ -29,8 +29,8 @@
 .info .coin-heading {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
-    gap: .5rem
+    margin: 16px 0;
+    gap: 8px;
 }
 
 .info .coin-price {
@@ -40,11 +40,11 @@
 }
 
 .info p {
-    padding-right: 1rem;
+    padding-right: 16px;
 }
 
 table {
-    margin: .5rem 0;
+    margin: 8px 0;
 }
 
 td, th {
@@ -59,7 +59,7 @@ th {
 .stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 32px;
     width: 100%;
 }
 
@@ -67,8 +67,8 @@ th {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #808080;
-    margin: .6rem 0;
-    padding-bottom: .5rem;
+    margin: 9.6px 0;
+    padding-bottom: 8px;
 }
 
 .stats .row p:first-child {
@@ -76,14 +76,14 @@ th {
 }
 
 .about h3 {
-    margin: 1rem 0;
+    margin: 16px 0;
 }
 
 @media screen and (max-width: 700px) {
     .coin-container .content {
         max-width: 100%;
-        margin: .5rem;
-        padding: 0 .5rem;
+        margin: 8px;
+        padding: 0 8px;
     }
 
     .stats {
@@ -95,10 +95,23 @@ th {
     }
 
     .rank {
-        margin: .5rem;
+        margin: 8px;
     }
 
     .rank-btn {
-        margin: .5rem 0;
+        margin: 8px 0;
     }
+}
+@media screen and (max-width: 370px) {
+   
+    td, tr {
+        padding: 0;
+    }
+    .stats, .row, .info{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
