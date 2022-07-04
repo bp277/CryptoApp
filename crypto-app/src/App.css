@@ -67,7 +67,7 @@ body {
   border-bottom: 1px solid #d7d7d7;
   padding: 10px;
 }
-.coin:hover { 
+.hoverEffect:hover { 
   transform:scale(1.02);
   transition: all 0.2s;
 }

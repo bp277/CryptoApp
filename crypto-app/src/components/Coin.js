@@ -12,7 +12,7 @@ function Coin({ name, icon, price, symbol, rank, priceChange1d, id }) {
   }, [])  
 
   return (
-    <Link to={`/coin/${id}`} element={<CoinDetail />} className="coin">
+    <Link to={`/coin/${id}`} element={<CoinDetail />} className="coin hoverEffect">
       <h3 className="rank">#{rank}</h3>
       <img src={icon} alt="icon" />
       <h1>{name}</h1>
